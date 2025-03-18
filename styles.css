@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    border: 3px green solid;
+}
+
+.container{
+    background: white;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border: 3px red solid;
+    border-radius: 5px;
+
+}
+
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    border: 3px black solid;
+    border-radius: 5px;
+    display: flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+   
+}
+
+input{
+    width: calc(100% - 50px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button{
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    background: #28a745;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+button:hover {
+    background: #218838;}
+
+ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 10px;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #eee;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    user-select: none;
+    position: relative;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.delete {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.delete:hover {
+    background: darkred;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+    input {
+        width: calc(100% - 50px);
+        font-size: 14px;
+        padding: 8px;
+    }
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+    li {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 600px;
+        padding: 30px;
+    }
+    input {
+        font-size: 18px;
+        padding: 12px;
+    }
+    button {
+        font-size: 18px;
+        padding: 12px;
+    }
+    li {
+        font-size: 18px;
+        padding: 12px;
+    }
+}
